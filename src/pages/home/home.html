@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="royal">
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Decibel Meter</h2>
+  <br />
+  <button ion-button full (click) = "start()">Record</button>
+  <!--button ion-button full color="dark" (click) = "stop()">Stop</button-->
+  <br />
+
+  <ion-card>
+  <ion-card-header>Result</ion-card-header>
+    <div class="result">
+        {{reading}}
+    </div>
+
+  </ion-card>
+</ion-content>
